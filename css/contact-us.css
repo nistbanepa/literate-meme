@@ -1,0 +1,522 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #e6e6e6;
+  background-size: cover;
+}
+
+/*** navigation bar for the title of the page and the social medias ***/
+
+.mm {
+  margin-left: 250px;
+}
+
+.sign-in {
+  position: absolute;
+  font-size: 25px;
+  margin-top: 6px;
+  margin-left: 1010px;
+}
+
+.nav {
+  background: linear-gradient(to left, #e6e6e6 0%, #ccccff 100%);
+  padding: 10px;
+}
+
+.nav h4 {
+  text-align: left;
+  margin-left: 55px;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  color: #00222e;
+  width: 70%;
+  text-align: center;
+}
+
+h4 {
+  opacity: 0.5;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.fbk a .fa {
+  font-size: 30px;
+  color: #3b5998;
+  text-shadow: 2px 2px 4px #e6e6e6;
+  display: inline-flex;
+  position: absolute;
+  right: 190px;
+  top: 4px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.twt a .fa {
+  font-size: 30px;
+  color: #1da1f2;
+  text-shadow: 2px 2px 4px #e6e6e6;
+  display: inline-flex;
+  position: absolute;
+  right: 125px;
+  top: 4px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.gplus a .fa {
+  font-size: 28px;
+  color: #c4302b;
+  text-shadow: 2px 2px 4px #e6e6e6;
+  display: inline-flex;
+  position: absolute;
+  right: 65px;
+  top: 4px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  opacity: 1;
+}
+
+/*** for main menu section for drop down menu ***/
+section {
+  margin-top: 15px;
+}
+
+.mainmenu ul {
+  display: inline-flex;
+  list-style: none;
+  color: #1a1a1a;
+  cursor: pointer;
+  text-align: center;
+}
+
+.mainmenu,
+.contact {
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+.mainmenu ul li {
+  width: 195px;
+  padding: 8px 10px;
+  margin: 1px;
+  font-family: "Montserrat", cursive;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.mainmenu ul li .submenu1 ul li {
+  width: 265px;
+}
+
+.mainmenu ul li:hover {
+  background: linear-gradient(to top left, #ffffcc 0%, #666699 100%);
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.submenu1 {
+  display: none;
+  z-index: 1;
+}
+
+.mainmenu ul li:hover .submenu1 {
+  display: block;
+  position: absolute;
+  background: linear-gradient(to bottom right, #ffffcc 0%, #666699 100%);
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: -10px;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.mainmenu ul li:hover .submenu1 ul li a {
+  padding: 5px;
+  margin: 4px auto;
+  z-index: 1;
+}
+
+.mainmenu ul li:hover .submenu1 ul {
+  display: block;
+  margin: 10px;
+  z-index: 1;
+}
+
+.mainmenu ul li:hover .submenu1 ul li {
+  padding: 10px;
+  background: transparent;
+  text-align: left;
+  z-index: 1;
+}
+
+.mainmenu ul li:hover .submenu1 ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  z-index: 1;
+}
+
+.mainmenu ul li:hover .submenu1 ul li a:hover {
+  background: linear-gradient(to right, #0000ff 0%, #ff3300 100%);
+  background-clip: text; /*cliping the background to text*/
+  -webkit-text-fill-color: transparent; /*making the background color fill the text color*/
+  text-decoration: underline;
+  z-index: 1;
+}
+
+/*** for fixed Vertical Icon Bar home, search, message and globe ***/
+.icon-bar {
+  width: 60px;
+  height: 50px auto;
+  background-color: #e6e6e6;
+  position: fixed;
+  top: 40%;
+  left: 1290px;
+}
+
+.icon-bar a {
+  display: block;
+  padding: 10px;
+  color: #000000;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  margin-left: 1px;
+}
+
+.icon-bar a i {
+  position: relative;
+  text-align: right;
+  margin-left: 1px;
+  padding: 4px;
+  transition: all 0.3s ease;
+  font-size: 26px;
+  color: #999999;
+}
+
+.icon-bar a:hover {
+  background-color: #bfbfbf;
+}
+
+.icon-bar a:hover i {
+  color: #000000;
+  right: 8px;
+}
+
+/***for content section***/
+#container {
+  font-family: "poppins", sans-serif;
+  width: 90%;
+  background: transparent;
+  margin: 40px auto;
+}
+
+#form {
+  color: black;
+  font-size: 18px;
+  padding: 25px 25px;
+  letter-spacing: 0.5px;
+}
+
+input[type="text"] {
+  letter-spacing: 1px;
+  display: block;
+  margin-top: 10px;
+  box-sizing: border-box;
+  border: transparent;
+  width: 60%;
+  border-bottom: 1px solid black;
+  border-radius: 7px;
+  padding: 12px 15px;
+  box-shadow: 0px 3px 4px #555555;
+}
+
+textarea {
+  width: 59%;
+  height: 40vh;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  padding: 10px;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 3px 4px #555;
+}
+
+::placeholder {
+  font-size: 15px;
+}
+
+.thok-vai {
+  padding: 10px 25px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  border-radius: 6px;
+}
+
+.thok-vai input[type="submit"] {
+  background: #146699;
+  border: 0px;
+  font-size: 18px;
+  color: whitesmoke;
+  font-family: "poppins", sans-serif;
+  border-radius: 6px;
+  padding: 10px 25px 10px 25px;
+  box-shadow: 1px 3px 4px #555;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.thok-vai input[type="submit"]:hover {
+  opacity: 1;
+}
+
+.topic {
+  font-family: "poppins", sans-serif;
+  padding-top: 25px;
+  text-align: center;
+  font-size: 25px;
+}
+
+#container .robot {
+  letter-spacing: 1px;
+  display: block;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  margin-left: 25px;
+  border: transparent;
+  border-bottom: 1px solid black;
+  border-radius: 7px;
+  padding: 18px 18px;
+  box-shadow: 0px 3px 4px #555555;
+  width: 18%;
+}
+
+.gmap {
+  width: 90%;
+  margin: 40px auto;
+}
+
+.gmap iframe {
+  width: 100%;
+  height: 500px;
+  border: 0px;
+  display: block;
+  box-shadow: 0px 3px 4px #555555;
+}
+
+.kei-nai {
+  margin: 100px auto;
+}
+
+/***for that empty space***/
+#nth {
+  padding: 110px;
+  margin-top: 50px;
+  background: linear-gradient(to top left, #ffff00 25%, #ff0000 100%);
+}
+
+#nth h1 {
+  color: whitesmoke;
+  font-size: 50px;
+  margin-left: 100px;
+}
+
+#nth small {
+  color: whitesmoke;
+  font-size: 15px;
+  margin-left: 100px;
+}
+
+/*** for the background images (big-medium-small-eclipse)***/
+.big-circle {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: -1;
+  opacity: 0.7;
+  height: 115%;
+}
+
+.medium-circle {
+  position: absolute;
+  top: 35%;
+  right: 50%;
+  z-index: -1;
+  opacity: 0.6;
+  height: 70%;
+}
+
+.small-circle {
+  position: absolute;
+  top: 74.7%;
+  right: 81%;
+  z-index: -1;
+  height: 40%;
+}
+
+.medium-circle1 {
+  position: absolute;
+  top: 7%;
+  right: 83%;
+  z-index: -1;
+  opacity: 1;
+  height: 40%;
+}
+
+/*** footer styling ***/
+footer {
+  display: flex;
+  width: 100%;
+  background-color: #dcdcdc;
+  color: #202020;
+  padding: 5px;
+}
+
+.head {
+  font-size: 18px;
+  padding: 35px 0px 25px 0px;
+}
+
+.heading {
+  font-size: 18px;
+  padding: 35px 0px 25px 60px;
+}
+.address {
+  flex: 1.5;
+}
+
+.address ul {
+  font-size: 13px;
+  text-decoration: none;
+  list-style: none;
+  text-align: left;
+}
+
+.address ul li {
+  padding: 5px 0px 30px 25px;
+  margin-left: 70px;
+}
+
+.address ul li a {
+  text-decoration: none;
+  color: #202020;
+  cursor: pointer;
+}
+
+.address ul li a:hover {
+  text-decoration: underline;
+}
+
+.otherlinks {
+  flex: 0.8;
+}
+
+.otherlinks ul {
+  font-size: 13px;
+  text-decoration: none;
+  list-style: none;
+  text-align: left;
+}
+
+.otherlinks ul li {
+  padding: 0px 0px 20px 5px;
+}
+
+.otherlinks ul li a {
+  text-decoration: none;
+  color: #202020;
+  cursor: pointer;
+}
+
+.otherlinks ul li a:hover {
+  background: linear-gradient(to right, #ff3300, #660066);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.time {
+  flex: 1;
+}
+
+.time ul {
+  font-size: 13px;
+  text-decoration: none;
+  list-style: none;
+  text-align: left;
+}
+
+.time ul li {
+  padding: 0px 0px 20px 5px;
+}
+
+.join-us {
+  flex: 1;
+}
+
+.email-box {
+  background: transparent;
+  border: 0px;
+  color: #202020;
+  font-size: 15px;
+  padding: 10px;
+  width: 240px;
+}
+
+hr {
+  width: 240px;
+  color: #202020;
+}
+
+.sub-btn {
+  padding: 10px 15px 10px 15px;
+  color: #e0e0e0;
+  border: 0px;
+  border-radius: 6px;
+  background-color: #146699;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.sub-btn:hover {
+  opacity: 0.8;
+}
+
+.social {
+  display: inline-block;
+  color: inherit;
+  font-size: 40px;
+  letter-spacing: 15px;
+}
+
+.fb {
+  color: #3b5998;
+}
+
+.tw {
+  color: #1da1f2;
+}
+
+.gp {
+  color: #c4302b;
+}
+
+.join-us a i:hover {
+  transform: scale(1.2);
+}
+
+.nothing {
+  background-color: #999999;
+  padding: 23px;
+}
